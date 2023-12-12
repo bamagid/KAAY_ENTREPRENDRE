@@ -13,4 +13,7 @@ class Guide extends Model
     {
         return $this->belongsTo(User::class);
     }
+    public function phases(){
+        return $this->belongsTo(Phase::class);
+    }
 }
